@@ -1,0 +1,16 @@
+.app-right-panel {
+  padding: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+}
+
+.app-right-panel__btn {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
