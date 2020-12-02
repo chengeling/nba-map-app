@@ -17,7 +17,7 @@ require(["esri/views/MapView", "esri/WebMap"], function (
     const webmap = new WebMap({
       portalItem: {
         // autocasts as new PortalItem()
-        id: "938ae1c2b4b1419bb2412156d2b10bb6"
+        id: "61c7ed9259fb4c1083f2964c402c37d0"
       }
     });
 
