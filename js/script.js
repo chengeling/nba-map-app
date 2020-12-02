@@ -9,3 +9,23 @@ hideMenuButton.addEventListener('click', () => {
 showMenuButton.addEventListener('click', () => {
     menu.classList.remove('app-header--hide')
 });
+
+require(["esri/views/MapView", "esri/WebMap"], function (
+    MapView,
+    WebMap
+  ) {
+    const webmap = new WebMap({
+      portalItem: {
+        // autocasts as new PortalItem()
+        id: "938ae1c2b4b1419bb2412156d2b10bb6"
+      }
+    });
+
+    /************************************************************
+     * Set the WebMap instance to the map property in a MapView.
+     ************************************************************/
+    const view = new MapView({
+      map: webmap,
+      container: "app-right-panel__map"
+    });
+  });
