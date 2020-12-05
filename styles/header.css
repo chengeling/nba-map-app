@@ -1,14 +1,13 @@
-.app-header {
-  background-color: #153e90;
-  height: 100%;
-  padding: 12px;
-  transition: transform 800ms;
+.app-header--hidden {
+  background-color: #0a3b20;
   position: relative;
   z-index: 10;
+  transform: translateX(-200px);
+  transition: transform 500ms;
 }
 
-.app-header--hide {
-  transform: translateX(-200px);
+.app-header--open {
+  transform: translateX(0);
 }
 
 .app-header__btn {
@@ -17,6 +16,15 @@
   outline: none;
   color: white;
   cursor: pointer;
+  margin: 12px;
+}
+
+.app-header__arrow {
+  transition: transform 400ms;
+}
+
+.app-header__arrow:hover {
+  transform: scale(1.2);
 }
 
 .app-header__image {
@@ -38,7 +46,7 @@
 }
 
 .app-site-nav__item:hover {
-  background-color: #15377c;
+  background-color: #15813e;
 }
 
 .app-site-nav__link {

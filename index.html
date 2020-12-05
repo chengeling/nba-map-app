@@ -8,15 +8,13 @@
     <link rel="stylesheet" href="styles/right-panel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <script src="js/script.js" defer></script>
-    <link rel="stylesheet" href="https://js.arcgis.com/4.17/esri/themes/light/main.css" />
-    <script src="https://js.arcgis.com/4.17/"></script>
     <title></title>
 </head>
 <body>
     <div class="app-container">
-        <header class="app-header">
+        <header class="app-header--hidden">
             <button class="app-header__btn">
-                <i class="fas fa-times fa-lg"></i>
+                <i class="fas fa-arrow-left app-header__arrow"></i>
             </button>
             <div class="app-header__logo">
                 <img class="app-header__image" src="images/logo.png" alt="">
@@ -25,7 +23,7 @@
                 <ul class="app-site-nav__list">
                     <li class="app-site-nav__item">
                         <i class="fas fa-info"></i>
-                        <a href="" class="app-site-nav__link">O lidze</a>
+                        <a href="" class="app-site-nav__link">Ogólne informacje</a>
                     </li>
                     <li class="app-site-nav__item">
                         <i class="fas fa-history"></i>
@@ -33,19 +31,22 @@
                     </li>
                     <li class="app-site-nav__item">
                         <i class="fas fa-basketball-ball"></i>
-                        <a href="" class="app-site-nav__link">Zespoły</a>
+                        <a href="" class="app-site-nav__link">Zawodnicy</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main class="app-right-panel">
-            <button class="app-right-panel__btn">
-                <i class="fas fa-bars fa-lg"></i>
-            </button>
-                <div id="app-right-panel__map">
-                    <h1 class="app-right-panel__title">Mapa klubów NBA</h1>
-                    <p class="app-right-panel__desc">Kliknij na symbol piłki, żeby dowiedzieć się więcej informacji o klubie!</p>
-                </div>
+            <video autoplay muted loop class="app-right-panel__video" src="/video/video.mp4"></video>
+            <section class="app-right-panel__content">
+                <button class="app-right-panel__btn">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <h1 class="app-right-panel__title">
+                    <span class="app-right-panel__team-name">BOSTON CELTICS</span><br> 
+                    Zapoznaj się z najlepszą drużyną świata!<br> 
+                </h1>
+            </section>
         </main>
     </main>
 </body>
