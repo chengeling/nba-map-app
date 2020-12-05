@@ -58,3 +58,18 @@
   font-weight: bold;
   user-select: none;
 }
+
+.app-right-panel__arrow:hover {
+  animation: arrowAnim 1.5s infinite;
+}
+
+@keyframes arrowAnim {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+}

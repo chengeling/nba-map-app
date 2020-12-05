@@ -19,14 +19,6 @@
   margin: 12px;
 }
 
-.app-header__arrow {
-  transition: transform 400ms;
-}
-
-.app-header__arrow:hover {
-  transform: scale(1.2);
-}
-
 .app-header__image {
   width: 100%;
 }
