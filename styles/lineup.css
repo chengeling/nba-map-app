@@ -33,3 +33,8 @@
 .table-data {
   padding: 8px;
 }
+
+.table-body .table-row:hover {
+  background-color: rgb(236, 255, 244);
+  cursor: pointer;
+}

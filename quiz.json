@@ -1,0 +1,28 @@
+{
+    "questions": [
+        {
+            "q": "Ile razy Boston Celtics zdobył mistrzostwo NBA?",
+            "a": "17"
+        },
+        {
+            "q": "Podaj nazwę metody, która usuwa ostatni element z listy.",
+            "a": "pop"
+        },
+        {
+            "q": "Co zwróci warunek: 0.1 + 0.2 === 0.3?",
+            "a": "false"
+        },
+        {
+            "q": "Podaj nazwę funkcji, która wypisuje w konsoli podaną wartość w nawiasach.",
+            "a": "console.log"
+        },
+        {
+            "q": "Za pomocą jakiej metody pobieramy elementy po id elementu?",
+            "a": "getElementById"
+        },
+        {
+            "q": "Rozwiń skrót AJAX.",
+            "a": "Asynchronous JavaScript and XML"
+        }
+    ]
+}
