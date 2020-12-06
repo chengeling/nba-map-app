@@ -52,6 +52,12 @@ xhr.addEventListener('load', () => {
                 userAnswer.style.borderColor = 'red';
             }
         }
-        alert(`Twój wynik to ${score}/${questionsLength}`)
+    if(score < 3) {
+        alert(`Twój wynik to ${score}/${questionsLength}... Postaraj się następnym razem!`);
+    } else if (score > 3 && score < 5) {
+        alert(`Twój wynik to ${score}/${questionsLength}... Było blisko, spróbuj poprawić nieprawidłowe odpowiedzi!`);
+    } else {
+        alert(`Twój wynik to ${score}/${questionsLength}... Gratulacje!`);
+    }
     })
 })

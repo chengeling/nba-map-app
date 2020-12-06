@@ -165,11 +165,16 @@
   }
 
   .app-right-panel__header {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .app-right-panel__text {
-    font-size: 14px;
+    font-size: 18px;
+    overflow: auto;
+  }
+
+  .app-right-panel__image-wrapper {
+    margin-bottom: 28px;
   }
 
   .app-right-panel__image-right,

@@ -64,10 +64,14 @@
 @media screen and (max-width: 768px) {
   .app-header--open {
     width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .app-header__logo {
+    display: none;
   }
 }
 

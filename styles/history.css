@@ -1,0 +1,55 @@
+.app-right-panel__history {
+  width: 80vw;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  padding: 18px;
+  border-radius: 24px;
+  position: relative;
+  height: 80vh;
+  border: 3px solid rgb(7, 110, 7);
+  overflow: auto;
+  text-align: left;
+}
+
+.app-right-panel__history-header {
+  text-align: center;
+  margin-bottom: 48px;
+  font-size: 42px;
+}
+
+.app-right-panel__history-title {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.app-righ-panel__history-text {
+  font-size: 18px;
+}
+
+.app-righ-panel__history-photo-left {
+  float: left;
+  margin: 15px;
+  width: 35%;
+  max-width: 100%;
+}
+
+.app-righ-panel__history-photo-right {
+  float: right;
+  margin: 15px;
+}
+
+@media screen and (max-width: 1025px) {
+  .app-right-panel__history {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .app-righ-panel__history-photo-left {
+    float: none;
+    width: 100%;
+  }
+}
