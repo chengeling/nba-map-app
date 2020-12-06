@@ -48,17 +48,9 @@
   display: grid;
 }
 
-.answer-input {
-  padding: 4px;
+.app-right-panel__question-box--open input {
   border: 2px solid #ccc;
-}
-
-.answer-input--good {
-  border: 2px solid green;
-}
-
-.answer-input--bad {
-  border: 2px solid red;
+  min-width: 180px;
 }
 
 .check-btn {

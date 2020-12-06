@@ -5,24 +5,24 @@
             "a": "17"
         },
         {
-            "q": "Podaj nazwę metody, która usuwa ostatni element z listy.",
-            "a": "pop"
+            "q": "Podaj nazwę hali Boston Celtics",
+            "a": "TD Garden"
         },
         {
-            "q": "Co zwróci warunek: 0.1 + 0.2 === 0.3?",
-            "a": "false"
+            "q": "Z jakim numerem grał Paul Pierce?",
+            "a": "34"
         },
         {
-            "q": "Podaj nazwę funkcji, która wypisuje w konsoli podaną wartość w nawiasach.",
-            "a": "console.log"
+            "q": "W któym roku wybrano w drafcie Jaysona Tatuma?",
+            "a": "2017"
         },
         {
-            "q": "Za pomocą jakiej metody pobieramy elementy po id elementu?",
-            "a": "getElementById"
+            "q": "Jak nazywa się obecny trener Bostonu?",
+            "a": "Brad Stevens"
         },
         {
-            "q": "Rozwiń skrót AJAX.",
-            "a": "Asynchronous JavaScript and XML"
+            "q": "W którym roku założono zespół?",
+            "a": "1946"
         }
     ]
 }

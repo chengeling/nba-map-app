@@ -18,14 +18,17 @@ xhr.responseType = 'json';
 xhr.send();
 xhr.addEventListener('load', () => {
     const questions = xhr.response.questions;
-    for(let question of questions) {
-        const { q, a } = question;
+    const questionsLength = questions.length;
+    
+    //Generate questions
+    for(let i = 1; i < questionsLength + 1; i++) {
+        const { q, a } = questions[i - 1];
         const questionText = document.createElement('h3');
-        questionText.classList.add('question-text')
+        questionText.classList.add(`question-text${i}`)
         questionText.textContent = q;
         quizBox.appendChild(questionText);
         const answerInput = document.createElement('input');
-        answerInput.classList.add('answer-input')
+        answerInput.classList.add(`answer-input${i}`)
         quizBox.appendChild(answerInput);
     }
 
@@ -37,15 +40,14 @@ xhr.addEventListener('load', () => {
     //Checking answers
     checkAnswersBtn.addEventListener('click', () => {
         let score = 0;
-        const questionsLength = questions.length;
-        for(let question of questions) {
-            const { q, a } = question;
-            const userAnswer = document.querySelector('.answer-input');
+        for(let i = 1; i < questionsLength + 1; i++) {
+            const userAnswer = document.querySelector(`.answer-input${i}`);
+            const { q, a } = questions[i - 1];
             if(userAnswer.value.toLowerCase() === a.toLowerCase()) {
                 score++;
-                userAnswer.classList.add('answer-input--good');
+                userAnswer.style.borderColor = 'green';
             } else {
-                userAnswer.classList.add('answer-input--bad');
+                userAnswer.style.borderColor = 'red';
             }
         }
         alert(`Twój wynik to ${score}/${questionsLength}`)

@@ -47,6 +47,10 @@
   cursor: pointer;
 }
 
+.app-site-nav__item--active {
+  background-color: #15813e;
+}
+
 .app-site-nav__item:hover {
   background-color: #15813e;
 }
