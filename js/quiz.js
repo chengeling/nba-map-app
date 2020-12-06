@@ -1,4 +1,5 @@
 const quizTitle = document.querySelector('.app-right-panel__quiz-title');
+const quizDesc = document.querySelector('.app-right-panel__quiz-desc');
 const startBtn = document.querySelector('.app-right-panel__quiz-btn');
 const quizContainer = document.querySelector('.app-right-panel__quiz');
 const quizBox = document.querySelector('.app-right-panel__question-box');
@@ -6,6 +7,7 @@ const quizBox = document.querySelector('.app-right-panel__question-box');
 startBtn.addEventListener('click', () => {
     startBtn.style.display = 'none';
     quizTitle.style.display = 'none';
+    quizDesc.style.display = 'none';
     setTimeout(() => {
         quizBox.classList.remove('app-right-panel__question-box');
         quizBox.classList.add('app-right-panel__question-box--open');

@@ -38,3 +38,11 @@
   background-color: rgb(236, 255, 244);
   cursor: pointer;
 }
+
+@media screen and (max-width: 1025px) {
+  .app-right-panel__lineup {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+}
