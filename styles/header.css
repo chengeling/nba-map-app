@@ -9,6 +9,7 @@
 .app-header--open {
   transform: translateX(0);
   overflow: hidden;
+  min-width: 120px;
 }
 
 .app-header__btn {
@@ -18,6 +19,14 @@
   color: white;
   cursor: pointer;
   margin: 12px;
+}
+
+.app-header__arrow {
+  font-size: 26px;
+}
+
+.app-header__arrow:hover {
+  animation: arrowAnim2 1.5s infinite;
 }
 
 .app-header__image {
@@ -55,5 +64,16 @@
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@keyframes arrowAnim2 {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-10px);
+    opacity: 0;
   }
 }

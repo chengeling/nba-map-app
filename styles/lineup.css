@@ -1,0 +1,35 @@
+.app-right-panel__lineup {
+  width: 80vw;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  padding: 18px;
+  border-radius: 24px;
+  position: relative;
+  min-height: 80vh;
+  display: grid;
+  align-items: center;
+  border: 3px solid rgb(7, 110, 7);
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.app-right-panel__table {
+  border: 1px solid #ccc;
+  border-spacing: 0;
+}
+
+.table-caption {
+  font-size: 24px;
+}
+
+.table-head {
+  background-color: green;
+}
+
+.table-header {
+  color: #fff;
+  padding: 8px;
+}
+.table-data {
+  padding: 8px;
+}
