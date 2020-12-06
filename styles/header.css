@@ -8,6 +8,7 @@
 
 .app-header--open {
   transform: translateX(0);
+  overflow: hidden;
 }
 
 .app-header__btn {
@@ -45,4 +46,14 @@
   text-decoration: none;
   color: #ffffff;
   margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .app-header--open {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
 }
