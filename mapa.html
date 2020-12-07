@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/right-panel.css">
+    <link rel="stylesheet" href="styles/map.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <script src="js/script.js" defer></script>
-    <title>Boston Celtics - strona fanowska</title>
+    <title>Mapa</title>
     <link rel='shortcut icon' type='image/x-icon' href='images/favicon.png' />
 </head>
 <body>
@@ -24,11 +25,11 @@
             </div>
             <nav class="app-site-nav">
                 <ul class="app-site-nav__list">
-                    <li class="app-site-nav__item app-site-nav__item--active">
+                    <li class="app-site-nav__item">
                         <i class="fas fa-home"></i>
                         <a href="index.html" class="app-site-nav__link">Strona główna</a>
                     </li>
-                    <li class="app-site-nav__item">
+                    <li class="app-site-nav__item app-site-nav__item--active">
                         <i class="fas fa-info"></i>
                         <a href="about.html" class="app-site-nav__link">O klubie</a>
                     </li>
@@ -52,15 +53,13 @@
             </nav>
         </header>
         <main class="app-right-panel">
-            <video autoplay muted loop class="app-right-panel__video" src="video/video.mp4"></video>
             <section class="app-right-panel__content">
+                <img class="app-right-panel__image" src="images/about-image.png" alt="celtics-text">
                 <button class="app-right-panel__btn">
                     <i class="fas fa-arrow-right app-right-panel__arrow"></i>
                 </button>
-                <h1 class="app-right-panel__title">
-                    <span class="app-right-panel__team-name">BOSTON CELTICS</span><br> 
-                    Zapoznaj się z najbardziej utytułowaną drużyną w historii NBA!<br> 
-                </h1>
+                <div class="app-right-panel__map">
+                </div>
             </section>
         </main>
     </main>
